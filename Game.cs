@@ -11,5 +11,24 @@ public class Game
       Tables.Add(new Table());
   }
 
-  
+  public bool Play(string file)
+  {
+    string filename = Model + ".txt";
+
+    if(file == filename.Replace(".txt", " last.txt"))
+    {
+      var content = File.ReadAllText(file);
+      var data = content
+        .Split(' ')
+        .Select(int.Parse)
+        .ToArray();
+      
+      
+
+      return true;
+    }
+    return false;
+
+    
+  }
 }

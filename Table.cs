@@ -18,4 +18,17 @@ public class Table
     
     return false;
   }
+
+  private bool isValidMove(int move) => pos[move] == false;
+
+  public bool MakeMove(int move)
+  {
+    if(isValidMove(move))
+    {
+      pos[move] = true;
+      return true;
+    }
+
+    return false;
+  }
 }
