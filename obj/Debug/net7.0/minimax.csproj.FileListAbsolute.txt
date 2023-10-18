@@ -1,0 +1,15 @@
+C:\Users\disrct\Desktop\minimax\bin\Debug\net7.0\minimax.exe
+C:\Users\disrct\Desktop\minimax\bin\Debug\net7.0\minimax.deps.json
+C:\Users\disrct\Desktop\minimax\bin\Debug\net7.0\minimax.runtimeconfig.json
+C:\Users\disrct\Desktop\minimax\bin\Debug\net7.0\minimax.dll
+C:\Users\disrct\Desktop\minimax\bin\Debug\net7.0\minimax.pdb
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\minimax.csproj.AssemblyReference.cache
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\minimax.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\minimax.AssemblyInfoInputs.cache
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\minimax.AssemblyInfo.cs
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\minimax.csproj.CoreCompileInputs.cache
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\minimax.dll
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\refint\minimax.dll
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\minimax.pdb
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\minimax.genruntimeconfig.cache
+C:\Users\disrct\Desktop\minimax\obj\Debug\net7.0\ref\minimax.dll
