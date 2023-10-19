@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Linq;
 using System.Drawing;
@@ -70,10 +71,14 @@ public class NotaktoView : View
 
     protected override void OnFrame(IGraphics g)
     {
-        play(
-            model1Plays ? Model1 : Model2,
-            model1Plays ? Model2 : Model1
-        );
+        try
+        {
+            play(
+                model1Plays ? Model1 : Model2,
+                model1Plays ? Model2 : Model1
+            );
+        }
+        catch { }
     }
 
     protected override void OnRender(IGraphics g)
