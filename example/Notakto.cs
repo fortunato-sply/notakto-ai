@@ -22,9 +22,23 @@ public class Notakto
     /// <summary>
     /// Joga em uma posição em um tabuleiro
     /// </summary>
-    public void Play(int board, int posit)
+    public void Play(int board, int pos)
     {
-        // Seu código aqui...
+        data[9 * board + pos] = true;
+
+        int sumInitialPos = board * 8;
+
+        //vertical
+        sums[sumInitialPos + pos % 3] += 1;
+        //horizontal
+        sums[sumInitialPos + 3 + pos / 3] += 1;
+
+        //diagonal
+        if(pos % 4 == 0)
+            sums[sumInitialPos + 6] += 1;
+
+        if(pos % 2 == 0 && pos % 8 != 0)
+            sums[sumInitialPos + 7] += 1;
     }
     
     /// <summary>
@@ -32,7 +46,14 @@ public class Notakto
     /// </summary>
     public bool CanPlay(int board)
     {
-        // Seu código aqui...
+        int boardInData = board * 8;
+        for(int i = boardInData; i < boardInData + 8; i++)
+        {
+            if(sums[i] >= 3)
+                return false;
+        }
+
+        return true;
     }
     
     /// <summary>
@@ -40,7 +61,13 @@ public class Notakto
     /// </summary>
     public bool GameEnded()
     {
-        // Seu código aqui...
+        for(int i = 0; i < boards; i++)
+        {
+            if(CanPlay(i))
+                return false;
+        }
+
+        return true;
     }
 
     /// <summary>
@@ -67,6 +94,8 @@ public class Notakto
     /// </summary>
     public IEnumerable<Notakto> Next()
     {
-        // Seu código aqui...
+        List<Notakto> validMove = new();
+
+        
     }
 }
